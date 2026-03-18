@@ -1,0 +1,17 @@
+/* Ejercicio 2: Fondo del cuerpo */
+body {
+    background-color: lightblue;
+}
+
+/* Ejercicio 3: Títulos en rojo */
+h1, h2, h3, h4, h5, h6 {
+    color: red;
+}
+
+/* Ejercicio 4: Imagen centrada y con medidas */
+img {
+    width: 400px;
+    height: 300px;
+    display: block;
+    margin: 0 auto;
+}
