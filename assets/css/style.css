@@ -13,3 +13,18 @@ img {
 img:hover {
     transform: scale(1.05);
 }
+
+/* Ajustes para las Cards */
+.card {
+    transition: box-shadow 0.3s ease;
+    border: none;
+}
+
+.card:hover {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover; /* Esto evita que la imagen se deforme */
+}
