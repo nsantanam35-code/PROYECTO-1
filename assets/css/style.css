@@ -95,3 +95,9 @@ body { padding: 0; margin: 0; font-family: Arial, sans-serif; }
     animation: pulse-green 2s infinite;
 }
 
+
+/* Desplazamiento suave para enlaces internos */
+html {
+    scroll-behavior: smooth;
+}
+
