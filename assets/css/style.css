@@ -1,33 +1,18 @@
 
-/* Reset General */
 html { scroll-behavior: smooth; }
-body { background-color: #f4f7f6; color: #333; }
-
-/* Navbar */
-.navbar { border-bottom: 3px solid #b21f2d; }
-
-/* Imágenes y Efectos */
-.card-img-top {
-    height: 200px;
-    object-fit: cover;
+.card-img-top { height: 200px; object-fit: cover; }
+.whatsapp-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #25d366;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    z-index: 1000;
+    transition: 0.3s;
 }
-
-.card {
-    border: none;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    transition: all 0.3s ease;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
-}
-
-/* Botón WhatsApp */
-.btn-whatsapp { animation: pulse 2s infinite; }
-@keyframes pulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.05); }
-    100% { transform: scale(1); }
-}
+.whatsapp-btn:hover { background-color: #128c7e; transform: scale(1.1); color: white; }
 

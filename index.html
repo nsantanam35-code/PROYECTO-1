@@ -3,18 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Red de Salud Digital</title>
+    <title>Red de Salud Digital | Contacto Directo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
+<body id="inicio">
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-danger shadow-sm mb-5">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger shadow-sm sticky-top">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="#">🩺 Red de Salud Digital</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            <a class="navbar-brand fw-bold" href="#inicio">🩺 Red de Salud</a>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
@@ -25,63 +22,76 @@
         </div>
     </nav>
 
-    <div id="inicio" class="container mb-5">
-        <div class="p-5 mb-4 bg-light rounded-3 shadow-sm" style="background-image: url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1200&q=80'); background-size: cover; background-position: center; color: white; text-shadow: 2px 2px 4px rgba(0,0,0,0.7);">
-            <div class="container-fluid py-5">
-                <h1 class="display-5 fw-bold">Innovación en Salud</h1>
-                <p class="col-md-8 fs-4">Conectamos pacientes con especialistas a través de tecnología de vanguardia.</p>
-                <a href="#contacto" class="btn btn-danger btn-lg">Pedir Cita</a>
-            </div>
+    <header class="py-5 mb-5 text-center text-white" style="background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1200&q=80'); background-size: cover; background-position: center;">
+        <div class="container py-5">
+            <h1 class="display-4 fw-bold">Conectividad Médica Real</h1>
+            <p class="lead">Navega por nuestros servicios y contáctanos al instante.</p>
         </div>
-    </div>
+    </header>
 
-    <div id="servicios" class="container my-5">
+    <section id="servicios" class="container mb-5 py-4">
         <div class="row row-cols-1 row-cols-md-3 g-4">
             <div class="col">
-                <div class="card h-100 shadow-sm border-0">
-                    <img src="https://images.unsplash.com/photo-1584981424270-5114947b0823?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Telemedicina">
+                <div class="card h-100 shadow border-0">
+                    <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Telemedicina">
                     <div class="card-body">
-                        <h5 class="card-title text-danger">Telemedicina</h5>
-                        <p class="card-text">Consulta con expertos desde la comodidad de tu hogar.</p>
-                        <a href="#contacto" class="btn btn-outline-danger">Saber más</a>
+                        <h5 class="card-title fw-bold text-danger">Telemedicina</h5>
+                        <a href="#contacto" class="btn btn-danger w-100">Pedir Cita</a>
                     </div>
                 </div>
             </div>
             <div class="col">
-                <div class="card h-100 shadow-sm border-0">
-                    <img src="https://images.unsplash.com/photo-1576091160241-22448419619c?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Historia Clínica">
+                <div class="card h-100 shadow border-0">
+                    <img src="https://images.unsplash.com/photo-1581056771107-24ca5f033842?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Ficha Médica">
                     <div class="card-body">
-                        <h5 class="card-title text-danger">Ficha Digital</h5>
-                        <p class="card-text">Toda tu información médica protegida y accesible siempre.</p>
-                        <a href="#contacto" class="btn btn-outline-danger">Saber más</a>
+                        <h5 class="card-title fw-bold text-danger">Ficha Digital</h5>
+                        <a href="#contacto" class="btn btn-danger w-100">Ver Ficha</a>
                     </div>
                 </div>
             </div>
             <div class="col">
-                <div class="card h-100 shadow-sm border-0">
-                    <img src="https://images.unsplash.com/photo-1550831107-1553da8c8464?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Farmacia">
+                <div class="card h-100 shadow border-0">
+                    <img src="https://images.unsplash.com/photo-1586015555751-63bb77f4322a?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Farmacia">
                     <div class="card-body">
-                        <h5 class="card-title text-danger">Farmacia Online</h5>
-                        <p class="card-text">Gestión de recetas y entrega a domicilio de medicamentos.</p>
-                        <a href="#contacto" class="btn btn-outline-danger">Saber más</a>
+                        <h5 class="card-title fw-bold text-danger">Farmacia</h5>
+                        <a href="#contacto" class="btn btn-danger w-100">Comprar</a>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-
-    <section id="contacto" class="container my-5 py-5 text-center">
-        <h2 class="text-danger mb-4">Contáctanos</h2>
-        <p>Estamos disponibles 24/7 para tu bienestar.</p>
-        <p>📞 +56 9 1234 5678 | 📧 contacto@redsalud.cl</p>
     </section>
 
-    <a href="https://wa.me/56912345678?text=Hola,%20necesito%20una%20cita" class="btn-whatsapp shadow-lg" target="_blank">
-        💬 WhatsApp
+    <section id="contacto" class="container my-5 py-5 bg-white shadow rounded border-start border-5 border-danger">
+        <div class="row g-5 px-4">
+            <div class="col-md-5">
+                <h2 class="text-danger fw-bold">Central de Ayuda</h2>
+                <p>📍 Av. Salud Digital 123, Valdivia</p>
+                <p>📞 +56 9 1234 5678</p>
+                <hr>
+                <img src="https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?auto=format&fit=crop&w=500&q=80" class="img-fluid rounded" alt="Mapa">
+            </div>
+            <div class="col-md-7">
+                <form id="contactForm">
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">Nombre</label>
+                        <input type="text" class="form-control" placeholder="Juan Pérez" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">Mensaje</label>
+                        <textarea class="form-control" rows="4" placeholder="¿En qué podemos ayudarte?"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-danger btn-lg w-100">Enviar Formulario</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <a href="https://wa.me/56912345678?text=Hola,%20necesito%20asistencia%20médica" class="whatsapp-btn shadow-lg" target="_blank">
+        WhatsApp 💬
     </a>
 
-    <footer class="bg-dark text-white text-center py-3 mt-5">
-        <p>&copy; 2026 Red de Salud Digital - Proyecto Educativo</p>
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <p class="mb-0">© 2026 Red de Salud Digital | Proyecto Operativo</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
