@@ -24,7 +24,7 @@
     <nav class="navbar navbar-expand-lg navbar-custom sticky-top shadow">
         <div class="container">
             <a class="navbar-brand fw-bold" href="#inicio"><span style="color: #dc3545;">✚</span> RSD | Red de Salud</a>
-            <div id="user-nav" class="ms-auto d-flex align-items-center">
+            <div id="user-nav" class="ms-auto">
                 <a href="#seccion-login" class="btn btn-danger btn-sm text-white">Mi Ficha Médica</a>
             </div>
         </div>
@@ -33,14 +33,13 @@
     <header id="inicio" class="text-center text-white">
         <div class="container">
             <h1 class="display-4 fw-bold">Tu Salud en un Clic</h1>
-            <p class="lead">Agenda con especialistas y revisa tus recetas en línea.</p>
+            <p class="lead">Convenios con Fonasa, Isapre y Dipreca.</p>
         </div>
     </header>
 
     <section id="telemedicina" class="container py-5">
         <div class="text-center mb-5">
-            <h2 class="text-danger fw-bold">Staff Médico Online</h2>
-            <p class="text-muted">Convenios con Fonasa, Isapre y Dipreca.</p>
+            <h2 class="text-danger fw-bold">Especialistas Disponibles</h2>
         </div>
         <div class="row row-cols-1 row-cols-md-3 g-4">
             <div class="col text-center">
@@ -104,20 +103,24 @@
                     <input type="text" id="reg-fullname" class="form-control mb-3" placeholder="Nombre Completo" required>
                     <input type="text" id="reg-username" class="form-control mb-3" placeholder="Usuario" required>
                     <input type="password" id="reg-password" class="form-control mb-3" placeholder="Contraseña" required>
+                    <select id="reg-prevision" class="form-select mb-3" required>
+                        <option value="" disabled selected>Selecciona tu Previsión</option>
+                        <option value="FONASA">FONASA</option>
+                        <option value="ISAPRE">ISAPRE</option>
+                        <option value="DIPRECA">DIPRECA</option>
+                    </select>
                     <button type="submit" class="btn btn-success w-100 mb-3">Crear Ficha</button>
+                    <p class="text-center small">¿Ya tienes cuenta? <a href="javascript:void(0)" onclick="toggleAuth()">Inicia Sesión</a></p>
                 </form>
             </div>
         </div>
 
         <div id="dashboard-container" class="hidden">
             <div class="card p-4 border-0 shadow-sm bg-white">
-                <div id="agenda-confirmacion" class="mb-4"></div>
                 <div id="user-info-display" class="mb-3 fw-bold text-danger"></div>
-                <div id="agenda-selector" class="p-3 bg-light rounded mb-4">
-                    </div>
-                <h6 class="fw-bold">Mis Documentos</h6>
-                <ul id="lista-recetas" class="list-group list-group-flush small mb-3"></ul>
-                <button onclick="logout()" class="btn btn-outline-secondary btn-sm">Cerrar Sesión</button>
+                <div id="agenda-selector" class="p-3 bg-light rounded mb-4"></div>
+                <div id="lista-recetas"></div>
+                <button onclick="logout()" class="btn btn-outline-secondary btn-sm mt-3">Cerrar Sesión</button>
             </div>
         </div>
     </section>
