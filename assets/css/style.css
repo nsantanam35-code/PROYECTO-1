@@ -1,103 +1,26 @@
 
-/* Reset y Estilos Base */
-body { padding: 0; margin: 0; font-family: Arial, sans-serif; }
+/* Configuración Base */
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f8f9fa; }
 
-/* Navbar Custom */
-.navbar { margin-bottom: 2rem; }
-
-/* Imagenes en Cards */
+/* Ajuste de Imágenes */
 .card-img-top {
-    height: 200px;
+    height: 220px;
     object-fit: cover;
+    border-bottom: 3px solid #dc3545;
 }
 
-/* Efectos Hover */
-.card { transition: transform 0.2s; }
-.card:hover { transform: scale(1.02); }
-
-
-/* Animación de entrada suave */
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
+/* Animación de entrada */
 .card {
-    animation: fadeInUp 0.8s ease-out forwards;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    margin-bottom: 20px;
 }
 
-/* Retraso para que las tarjetas no aparezcan todas al mismo tiempo */
-.col:nth-child(1) .card { animation-delay: 0.2s; }
-.col:nth-child(2) .card { animation-delay: 0.4s; }
-.col:nth-child(3) .card { animation-delay: 0.6s; }
-
-
-/* Botón flotante de WhatsApp */
-.btn-whatsapp {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #25d366;
-    color: white;
-    border-radius: 50px;
-    padding: 15px 25px;
-    font-weight: bold;
-    text-decoration: none;
-    z-index: 1000;
-    transition: all 0.3s ease;
-    display: flex;
-    align-items: center;
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
 }
 
-.btn-whatsapp:hover {
-    background-color: #128c7e;
-    color: white;
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-}
-
-@media (max-width: 768px) {
-    .btn-whatsapp span {
-        display: none; /* En móviles solo muestra el icono/emoji */
-    }
-    .btn-whatsapp {
-        padding: 15px;
-        border-radius: 50%;
-    }
-}
-
-/* Efecto de pulso para el botón de WhatsApp */
-@keyframes pulse-green {
-    0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
-    70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
-    100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
-}
-
-.btn-whatsapp {
-    animation: pulse-green 2s infinite;
-}
-
-
-/* Efecto de pulso para el botón de WhatsApp */
-@keyframes pulse-green {
-    0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
-    70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
-    100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
-}
-
-.btn-whatsapp {
-    animation: pulse-green 2s infinite;
-}
-
-
-/* Desplazamiento suave para enlaces internos */
-html {
-    scroll-behavior: smooth;
-}
+/* Desplazamiento suave */
+html { scroll-behavior: smooth; }
 
